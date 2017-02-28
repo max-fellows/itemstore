@@ -31,6 +31,9 @@
     <Compile Include="src\model\item.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\model\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\resource\item.py" />
     <Compile Include="src\resource\store.py">
       <SubType>Code</SubType>
