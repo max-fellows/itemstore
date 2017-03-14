@@ -17,10 +17,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///../data.db"
 api = Api(app)
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
 auth = AuthenticationService()
 app.secret_key = "foo"
 jwt = JWT(app, auth.authenticate, auth.identity) # /auth
@@ -30,8 +26,3 @@ api.add_resource(Item, "/item/<string:name>")
 api.add_resource(User, "/register")
 api.add_resource(Stores, "/stores")
 api.add_resource(Store, "/store/<string:name>")
-
-if __name__ == "__main__":
-    from db import db
-    db.init_app(app)
-    app.run(port=8080, debug=True)
