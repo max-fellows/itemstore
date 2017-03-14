@@ -1,0 +1,6 @@
+/.vs/section_6/v15/*.suo
+*.pyc
+/venv/Include
+/venv/Lib
+/venv/Scripts
+/venv/pip-selfcheck.json
