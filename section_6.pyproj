@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c24f4778-d1f1-4436-a5db-028d0da58ef1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>.\app.py</StartupFile>
+    <StartupFile>run.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
